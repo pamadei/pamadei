@@ -5,14 +5,14 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'public', 'js', 'index.js'),
   plugins: [
     new HtmlWebpackPlugin({
-    template: './src/public/index.html',
-          }),
+      template: './src/public/index.html',
+    }),
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'main.[hash].js'
   },
-  mode:'production',
+  mode: 'development',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
@@ -24,27 +24,35 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: [
-          {
+        loader: [{
           loader: 'babel-loader'
-        }
-      ]
+        }]
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: [
-          {
+        loader: [{
           loader: 'eslint-loader'
-        }
-      ]
+        }]
       },
       {
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader'],
-      exclude: /\.module\.css$/
-    },
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        // exclude: /\.module\.css$/
+      },
+      // {
+      //   test: /\.png$/,
+      //   use: [{
+      //     loader: 'url-loader',
+      //     options: {
+      //       mimetype: 'image/png'
+      //     }
+      //   }]
+      // },
+      // {
+      //   test: /\.svg$/,
+      //   use: 'file-loader'
+      // }
     ],
   },
 }
-
