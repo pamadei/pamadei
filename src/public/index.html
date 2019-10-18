@@ -3,33 +3,165 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pablo Amadei</title>
+  <title>Pablo Amadei - Front-End Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 </head>
 <body>
   <!-- Toolbar -->
   <header>
-    <div class="DrawerToggle"><span>&#9776;</span></div>
-    <nav class="Nav">
-      <ul>
-          <li><a href="#about"></a>About</li>
-          <li><a href="#work"></a>Work Experience</li>
-          <li><a href="#projects"></a>Projects</li>
-          <li><a href="#contact"></a>Contact</li>
+    <nav class="Navbar">
+      <div class="container">
+        <div class="Logo">Logo</div>
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
     </nav>
+    <div class="DrawerToggle" id="drawer-toggle"><span>&#9776;</span></div>
   </header>
   <!-- SideDrawer -->
   <div class="Sidedrawer" id="side-drawer"></div>
   <!-- Backdrop -->
   <div class="Backdrop" id="backdrop"></div>
   <!-- Sections -->
-  <section class="About" id="about"></section>
-  <section class="Work" id="work"></section>
-  <section class="Projects" id="projects"></section>
-  <section class="Contact" id="contact"></section>
-  <!-- Footer -->
-  <footer class="Footer"></footer>
+  <section class="About" id="about">
+    <div>
+      <h4 class="Subtitle"> Hey! my name is:</h4>
+      <h1 class="Title">Pablo Amadei</h1>
+      <p class="Aboutme">I am a Front-End Web Developer with solid experience in digital marketing and Entrepreneurship.
+        Passion for web development and technology. Results-driven and motivated by learning, strong communicator at all
+        levels, pragmatic and analytical.</p>
+    </div>
+  </section>
+  <section class="Skills" id="skills">
+    <div class="Description">
+      <h2 class="Title">Skills</h2>
+      <span class="Line"></span>
+      <div class="Skills-list">
+        <ul>
+          <li>&#10095; Solid understanding of JavaScript, HTML5 CSS3 (including PostCSS, SASS and BEM).</li>
+          <li>
+            &#10095; Proven experience using Angular 7 (Typescript) building responsive single- page applications.
+          </li>
+          <li>
+            &#10095; A good understanding of using and building RESTful APIs (Node.js & Express).
+            Working knowledge of npm, Gulp, Heroku, Netlify and version control Git.
+          </li>
+          <li>
+            &#10095; Currently building MERN projects with React and Node.js and interested in learning new Programming
+            Languages, Frameworks & libraries (i.e. Ruby, Ruby on Rails, GraphQL, tensorflow.js).
+          </li>
+          <li>
+            &#10095; Working experience in Travel and Real Estate Tech industries & helping small businesses and
+            startups.
+          </li>
+          <li>
+            &#10095; Possess a Business Administration degree and experience in Entrepreneurship, Finance and Digital
+            Marketing.
+          </li>
+          <li>
+            &#10095; Languages spoken: English (fluent), Spanish (mother tongue) and French (Intermediate).
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <section class="Work" id="work">
+    <div class="Description">
+      <h2 class="Title">Word Experience</h2>
+      <span class="Line"></span>
+      <div class="Roles">
+        <ul class="Controlers" id="controllers">
+          <li><a id="role0">SquareFoot</a></li>
+          <li><a id="role1">Intvs</a></li>
+          <li><a id="role2">TripAdvisor</a> </li>
+        </ul>
+        <div class="Role">
+          <h2>Marketing Manager</h2>
+          <p>May 2019 - Sep 2019 - Squarefoot, Belfast, UK</p>
+          <ul>
+            <li>Led the SEO strategy through optimization and content creation to increasing Leads and Traffic to our
+              Real Estate Tech website. Performed Keyword and Competitor Analysis to ensure we are targeting the most
+              beneficial Keywords and user intent.</li>
+            <li>Managed the product life cycle of our Wordpress site to ensure the development of new Landing Pages to
+              increase Leads coming from Paid Social and PPC campaigns.</li>
+            <li>Developed Landing Pages using AMP, PHP and Wordpress.</li>
+          </ul>
+        </div>
+        <div class="Role">
+          <h2>Front End Developer</h2>
+          <p>Apr 2018 - May 2019 - Intvs, Belfast, UK</p>
+          <ul>
+            <li>Developed Single Page Applications with Angular 7 and NoSQL Realtime databases to retrieve data to users
+              (MongoDB and Firebase).</li>
+            <li>Built a new Dashboard implementing users Authentication & role based Authorization. Users could sign
+              up/log in and check their status pre-trip checklist. Built a second dashboard for the Customer Service
+              team who could review users data, related documents and update the database in real time.</li>
+            <li>Used Node.Js (Express) to build a Restful Api and Google Cloud Functions to automate tasks and build
+              realtime triggers. Used of third party APIs (i.e. postmark) to create a seamless UX.</li>
+            <li>Used CSS3 and the Material Design Components to create a responsive Web App.</li>
+          </ul>
+        </div>
+        <div class="Role">
+          <h2>Global Key Account Manager</h2>
+          <p>Dec 2015 - Apr 2018 - TripAdvisor, Belfast, UK</p>
+          <ul>
+            <li>Optimized partners’digital campaigns and proactively finding new ways to build the client’s business
+              through detailed analysis and effective salesmanship.</li>
+            <li>Liaised with Product and Engineering team and clients to create new opportunities and improve our
+              products.</li>
+            <li>Worked in collaboration with the Restaurant Team to create business opportunities and share knowledge
+              about markets and clients.</li>
+            <li>Provided training to colleagues and partners to promote Mobile first through Mobile Web Optimization.
+            </li>
+            <li>Actively listened to partners to generate new opportunities for the business to problem solve.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="Projects" id="projects">
+    <div class="Description">
+      <h2 class="Title">Projects</h2>
+      <span class="Line"></span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt libero quo harum corrupti? Provident atque,
+        sint deleniti dignissimos quia repellat eos eveniet? Suscipit ea maxime dignissimos distinctio! Beatae vel esse
+        sapiente praesentium iusto dolorum rem similique eos? Vero asperiores consequuntur beatae totam ab! Maxime velit
+        explicabo hic, nobis in ducimus libero quidem illo vero inventore accusantium odio debitis id error eius alias
+        praesentium officiis soluta porro laudantium iusto dolorum repellat.</p>
+    </div>
+  </section>
+  <section class="Contact" id="contact">
+    <div class="Description">
+      <h2 class="Title">Get in Touch</h2>
+      <span class="Line"></span>
+      <p>I'm not currently looking for freelance opportunities. Feel free to send me an email. Whether for a potential
+        project or just to say hi, I will try my best to answer your email!
+      </p>
+      <a href="mailto:pamadei@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="btn">Contact</a>
+    </div>
+    <!-- Footer -->
+    <footer class="Footer">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/pabloamadei" target="_blank" rel="nofollow noopener noreferrer"
+            aria-label="Linkedin"><img src="" alt="Linkedin">
+          </a></li>
+        <li><a href="https://github.com/pamadei" target="_blank" rel="nofollow noopener noreferrer"
+            aria-label="Github"><img src="" alt="Github">
+          </a></li>
+        <li><a href="https://twitter.com/pamadei" target="_blank" rel="nofollow noopener noreferrer"
+            aria-label="Twitter"><img src="" alt="Twitter">
+          </a></li>
+      </ul>
+      <div class="Email">
+        <span>pamadei@gmail.com <span class="Line email-footer"></span></span>
+      </div>
+    </footer>
+  </section>
 </body>
 </html>
