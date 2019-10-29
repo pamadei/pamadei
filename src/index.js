@@ -1,6 +1,6 @@
-import '../styles.css';
-import showRole from './showRole/showRole';
-import getRoles from './getRoles/getRoles';
+import './styles.css';
+import showRole from './app/showRole/showRole';
+import getRoles from './app/getRoles/getRoles';
 
 /* Add Logic to Roles */
 // Show first Role
